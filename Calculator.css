@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+};
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+#calculator{
+	width: 325px;
+	height: auto;
+
+	margin: 50px auto;
+	padding: 20px 0 9px 20px;
+
+	background-color: #9dd2ea;
+	border-radius: 5px;
+}
+
+.key_area, .top_screen {
+	overflow: hidden;
+}
+/* QUESTION - overflow is working but NOT clearfix, WHY???*/
+
+.top_screen div {
+	float: left;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.top_screen div.clear_data {
+	width: 66px;
+	height: 40px;
+
+	line-height: 40px;
+	text-align: center;
+
+	margin: 0 7px 11px 0;
+	background-color: #ff7c87;
+}
+
+.top_screen div.result_screen{
+	width: 212px;
+	height: 40px;
+	padding: 0 10px;
+	margin-bottom: 11px;
+
+	background-color: rgba(0, 0, 0, 0.2);
+
+	line-height: 40px;
+	text-align: right;
+}
+
+.key_area span {
+	width: 66px;
+	height: 40px;
+
+	margin: 0 7px 11px 0;
+	float: left;
+
+	background-color: white;
+	text-align: center;
+
+	font-size: 16px;
+	line-height: 40px;
+
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.key_area span.kaisan {
+	background: #FFF0F5;
+	margin-right: 0;
+}
+
+.key_area span.equals {
+	background-color: #f1ff92;
+}
